@@ -1,0 +1,10 @@
+// Find Files For File Finder
+
+$webservice.github:isver=false,install=true
+waitforinstall*(github)
+github:addhtmldata(filewizard.prroject{19374559,filefinder})
+github:install(xGitFinder.htmldata.filefinder)
+filefinder:InstallFind(xFileFinder.filefinder.main:stable():stabledata=:filefinder:.main.stabledata)
+github.makecustomautocommand(finder=filefindermainstable)
+
+finder:findfile(getalldata:ofProject{benjitran2009/mse})
